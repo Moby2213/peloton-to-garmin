@@ -56,8 +56,7 @@ jobs:
           "Peloton": {
             "NumWorkoutsToDownload": ${{ github.event.inputs.workoutsToDownload || env.DEFAULT_WORKOUT_NUM }},
             "excludeWorkoutTypes": [OutdoorCycling, OutdoorRunning, OutdoorWalking]
-            
-          },
+            },
           "Garmin": {
             "Upload": true,
             "FormatToUpload": "fit"
