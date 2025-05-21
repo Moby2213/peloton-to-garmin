@@ -32,12 +32,12 @@ jobs:
 
     - name: 🗃 Create config file
       env:
-        DEFAULT_WORKOUT_NUM: 5
+        DEFAULT_WORKOUT_NUM: 6
       run: |
         cat <<EOT > /app/configuration.local.json 
         {
           "App": {
-            "EnablePolling": false,
+            "EnablePolling": true,
             "CheckForUpdates": true,
             "CloseConsoleOnFinish": true
           },
@@ -55,7 +55,7 @@ jobs:
           },
           "Peloton": {
             "NumWorkoutsToDownload": ${{ github.event.inputs.workoutsToDownload || env.DEFAULT_WORKOUT_NUM }},
-            "ExcludeWorkoutTypes": ${{OutdoorCycling,OutdoorRunning,OutdoorWalking}}
+            "ExcludeWorkoutTypes": OutdoorCycling,OutdoorRunning,OutdoorWalking
           },
           "Garmin": {
             "Upload": true,
