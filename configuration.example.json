@@ -13,7 +13,7 @@
     "IncludeTimeInHRZones": true,
     "IncludeTimeInPowerZones": true,
     "StackedWorkouts": {
-      "AutomaticallyStackWorkouts": True,
+      "AutomaticallyStackWorkouts": false,
       "MaxAllowedGapSeconds": 300
     }
   },
@@ -59,4 +59,5 @@
   }
 
 }
+
 
