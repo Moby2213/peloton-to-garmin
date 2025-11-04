@@ -13,7 +13,7 @@
     "IncludeTimeInHRZones": true,
     "IncludeTimeInPowerZones": true,
     "StackedWorkouts": {
-      "AutomaticallyStackWorkouts": false,
+      "AutomaticallyStackWorkouts": True,
       "MaxAllowedGapSeconds": 300
     }
   },
@@ -21,8 +21,8 @@
   "Peloton": {
     "Email": "",
     "Password": "",
-    "NumWorkoutsToDownload": 1,
-    "ExcludeWorkoutTypes": [ ]
+    "NumWorkoutsToDownload": 5,
+    "ExcludeWorkoutTypes": [OutdoorCycling, OutdoorRunning, OutdoorWalking]
   },
 
   "Garmin": {
@@ -59,3 +59,4 @@
   }
 
 }
+
